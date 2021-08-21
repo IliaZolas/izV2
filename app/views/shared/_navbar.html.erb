@@ -1,7 +1,5 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <%= link_to "#", class: "navbar-brand" do %>
-    <%= image_tag "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" %>
-    <% end %>
+  <%= link_to "IZ", "#",class:"navbar-brand nav-logo" %>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -27,28 +25,28 @@
         </li>
       <% else %>
         <li class="nav-item">
-          <%= link_to "About Me", new_user_session_path, class: "nav-link" %>
+          <%= link_to "About Me", "#aboutme" , class: "nav-link nav-hover" %>
         </li>
         <li class="nav-item">
-          <%= link_to "Employment", new_user_session_path, class: "nav-link" %>
+          <%= link_to "Employment", "#Employment" , class: "nav-link nav-hover" %>
         </li>
         <li class="nav-item">
-          <%= link_to "Portfolio", new_user_session_path, class: "nav-link" %>
+          <%= link_to "Portfolio", "#Portfolio" , class: "nav-link nav-hover" %>
         </li>
         <li class="nav-item">
-          <%= link_to "Languages", new_user_session_path, class: "nav-link" %>
+          <%= link_to "Languages", "#Languages" , class: "nav-link nav-hover" %>
         </li>
         <li class="nav-item">
-          <%= link_to "Programs", new_user_session_path, class: "nav-link" %>
+          <%= link_to "Programs", "#Programs" , class: "nav-link nav-hover" %>
         </li>
         <li class="nav-item">
-          <%= link_to "Education", new_user_session_path, class: "nav-link" %>
+          <%= link_to "Education", "#Education" , class: "nav-link nav-hover" %>
         </li>
         <li class="nav-item">
-          <%= link_to "Contact", new_user_session_path, class: "nav-link" %>
+          <%= link_to "Contact", "#Contact",  class: "nav-link nav-hover" %>
         </li>
         <li class="nav-item">
-          <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+          <%= link_to "Login", new_user_session_path, class: "nav-link nav-hover" %>
         </li>
       <% end %>
     </ul>
