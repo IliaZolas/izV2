@@ -10,10 +10,51 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_14_114913) do
+ActiveRecord::Schema.define(version: 2021_08_24_160927) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "blogposts", force: :cascade do |t|
+    t.string "blog_title"
+    t.string "blog_sub_heading"
+    t.text "blog_text"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.bigint "user_id", null: false
+    t.index ["user_id"], name: "index_blogposts_on_user_id"
+  end
+
+  create_table "employments", force: :cascade do |t|
+    t.string "position_title"
+    t.string "company_name"
+    t.string "company_url"
+    t.text "company_description"
+    t.bigint "user_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_employments_on_user_id"
+  end
+
+  create_table "portfolios", force: :cascade do |t|
+    t.string "client_name"
+    t.string "client_url"
+    t.text "client_description"
+    t.bigint "user_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_portfolios_on_user_id"
+  end
+
+  create_table "projects", force: :cascade do |t|
+    t.string "project_name"
+    t.string "project_url"
+    t.text "project_description"
+    t.bigint "user_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_projects_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -27,4 +68,8 @@ ActiveRecord::Schema.define(version: 2021_08_14_114913) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "blogposts", "users"
+  add_foreign_key "employments", "users"
+  add_foreign_key "portfolios", "users"
+  add_foreign_key "projects", "users"
 end
