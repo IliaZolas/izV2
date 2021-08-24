@@ -1,0 +1,23 @@
+<div class="new-blogpost-page">
+<h1>Create a Blogpost</h1>
+    <h2>Fill in the details below</h2>
+        <%= simple_form_for [@blogposts] do |f| %>
+        <%= f.input :blog_title,
+                    required: true,
+                    autofocus: true,
+                    input_html: { autocomplete: "Blogpost Title" }%>
+        <%= f.input :blog_sub_heading,
+                    required: true,
+                    autofocus: true,
+                    input_html: { autocomplete: "Blogpost Sub Heading" }%>
+        <%= f.input :blog_text,
+                    :as => :text,
+                    required: true,
+                    autofocus: true,
+                    input_html: { class: '', autocomplete: "Blog Text" }%>
+        <%= f.input :photo,
+                    autofocus: true,
+                    as: :file %>
+        <%= f.submit "CREATE", class: "btn btn-primary" %>
+        <% end %>
+</div>
