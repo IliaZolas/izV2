@@ -6,13 +6,9 @@
     <div class="dashboard-area">
         <div class="section">
             <p>Blog Posts</p>
-            <p>New Blog Post</p>
-            <ul>
-                <li>blogpost 1</li>
-                <li>blogpost 1</li>
-                <li>blogpost 1</li>
-                <li>blogpost 1</li>
-            </ul>
+        
+            <%= link_to "All Blogposts", user_blogposts_path(current_user) %>
+        
         </div>
         <div class="section">
             <p>Employment</p>
