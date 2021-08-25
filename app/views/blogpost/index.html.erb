@@ -1,15 +1,16 @@
-<div class="">
+<div class="all-blogposts-page">
     <h1>All Blogposts</h1>
     <p>All Blogposts should appear here</p>
-    <% @blogposts.each do |blogpost| %>
-    <div class="">
-        <div class="">
-        </div>
-        <div class="">
-            <h3 class=""><%= blogpost.blog_title %></h3>
-            <div class="">
-            </div>
-        </div>
+    <div>
+        <table>
+            <th>Blogpost</th>
+            <tbody>
+                <tr>
+                    <% @blogposts.each do |blogpost| %>
+                    <td><h3 class=""><%= blogpost.blog_title %></h3><p class=""><%= blogpost.blog_sub_heading %></p><p>edit</p></td>
+                </tr>
+                <% end %>
+            </tbody>
+        </table>
     </div>
-    <% end %>
 </div>
