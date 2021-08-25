@@ -13,7 +13,7 @@ Rails.application.routes.draw do
     root 'dashboard#index'
 
     resources :user do
-      resources :blogposts
+      resources :blogpost
     end
 
   end
