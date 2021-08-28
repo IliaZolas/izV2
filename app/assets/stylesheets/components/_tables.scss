@@ -1,7 +1,46 @@
 th {
     color: white;
+    width: 100%;
+    background: #222222;
+    padding: 10px 0px 10px 0px;
 }
 
 tr {
     background: grey;
+    width: 100%;
+}
+
+td {
+    background: grey;
+    width: 100%;
+    padding: 20px;
+    border-bottom: 2px solid #009c9c;
+}
+
+.table-container {
+}
+
+table {
+    width: 100%;
+}
+
+.table-h1 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1;
+    color: white;
+}
+
+.table-h2 {
+    font-size: 14px;
+    line-height: 1;
+}
+
+.table-p {
+    font-size: 10px;
+    line-height: 0;
+}
+
+.table-button-spacing {
+    padding-top: 5px;
 }
