@@ -12,15 +12,14 @@ class BlogpostController < ApplicationController
         @blogposts = Blogpost.new
     end
 
-
     def create
-    @blogposts = Blogpost.new(blogpost_params)
-    @blogposts.user = current_user
-    if @blogposts.save!
-    # redirect_to blogposts_path(@blogpost)
-    else
-    render 'new'
-    end
+        @blogposts = Blogpost.new(blogpost_params)
+        @blogposts.user = current_user
+        if @blogposts.save!
+            redirect_to user_blogpost_path(@blogposts)
+            else
+            render 'new'
+        end
     end
 
     def edit
@@ -42,7 +41,7 @@ class BlogpostController < ApplicationController
     private
 
     def blogpost_params
-    params.require(:blogpost).permit(:user_id, :blog_title, :blog_description, :blog_sub_heading, :blog_text, :photo)
+    params.require(:blogposts).permit(:user_id, :blog_title, :blog_sub_heading, :blog_text, :photo)
     end
 
 
