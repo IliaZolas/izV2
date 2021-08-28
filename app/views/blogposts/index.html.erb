@@ -16,8 +16,8 @@
                             <p class="table-h2"><%= blogpost.blog_sub_heading %></p>
                             <p class="table-p"><%= blogpost.blog_text %></p>
                             <div class="flex table-button-spacing">
-                                <%= link_to "Edit", class: "td-button" %>
-                                <%= link_to "Delete", class: "td-button" %>
+                                <%= link_to "Edit", edit_blogpost_path(blogpost),class: "td-button" %>
+                                <%= link_to "Delete", blogpost_path(blogpost), method: :delete , class: "td-button" %>
                             </div>
                         </td>
                     </tr>

@@ -29,13 +29,13 @@ class BlogpostsController < ApplicationController
     def update
         @blogposts = Blogpost.find(params[:id])
         @blogposts.update(blogpost_params)
-    # redirect_to blogposts_path(@blogpost)
+        redirect_to blogposts_path(@blogposts)
     end
 
     def destroy
         @blogposts = Blogpost.find(params[:id])
         @blogposts.destroy
-    # redirect_to blogposts_path(@blogpost)
+        redirect_to blogposts_path(@blogposts)
     end
 
     private
