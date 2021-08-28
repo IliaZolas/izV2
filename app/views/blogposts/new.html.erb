@@ -15,6 +15,9 @@
                         required: true,
                         autofocus: true,
                         input_html: { class: '', autocomplete: "Blog Text" }%>
+            <%= f.input :photo,
+                        autofocus: true,
+                        as: :file %>
             <%= f.submit "CREATE", class: "btn btn-primary" %>
         <% end %>
 </div>

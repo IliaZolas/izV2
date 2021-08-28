@@ -12,9 +12,12 @@ Rails.application.routes.draw do
   authenticated :user do
     root 'dashboard#index'
 
-    resources :user do
-      resources :blogpost
+    resources :users do
+      resources :blogposts
     end
+
+    resources :blogposts
+
 
   end
 end

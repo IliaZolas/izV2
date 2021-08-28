@@ -1,11 +1,11 @@
-class BlogpostController < ApplicationController
+class BlogpostsController < ApplicationController
 
     def index
         @blogposts = Blogpost.all
     end
 
     def show
-        @blogposts = Blogpost.find(params[:id])
+        @blogpost = Blogpost.find(params[:id])
     end
 
     def new
@@ -16,7 +16,7 @@ class BlogpostController < ApplicationController
         @blogposts = Blogpost.new(blogpost_params)
         @blogposts.user = current_user
         if @blogposts.save!
-            redirect_to user_blogpost_path(@blogposts)
+            redirect_to blogpost_path(@blogposts)
             else
             render 'new'
         end
@@ -41,7 +41,7 @@ class BlogpostController < ApplicationController
     private
 
     def blogpost_params
-    params.require(:blogposts).permit(:user_id, :blog_title, :blog_sub_heading, :blog_text, :photo)
+    params.require(:blogpost).permit(:user_id, :blog_title, :blog_sub_heading, :blog_text, :photo)
     end
 
 
