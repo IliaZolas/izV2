@@ -23,3 +23,12 @@
         color: white;
     }
 }
+
+.home-content-button {
+    color: white;
+    text-decoration: none;
+    &:hover {
+        text-decoration: none !important;
+        color: white;
+    }
+}
