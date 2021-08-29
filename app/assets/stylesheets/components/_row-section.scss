@@ -1,14 +1,18 @@
 .content-row {
     width: 100%;
     padding: 30px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
 }
 
 .row-card {
     background: #1F1F1F;
     padding: 25px;
-    border-radius: 10px;
-    width: 507px;
+    border-radius: 5px;
+    min-width: 507px;
     height: 250px;
+    margin-right: 20px;
     &:hover {
         background: #009c9c;
         color: white;

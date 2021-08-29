@@ -6,6 +6,9 @@ Rails.application.routes.draw do
       get '/' => 'pages#home'
       # get "/about" => "pages#about"
       # get "/contact" => "pages#contact"
+
+      resources :blogposts, only: [:show]
+
     end
   end
 
