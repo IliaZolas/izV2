@@ -3,5 +3,6 @@ class PagesController < ApplicationController
 
   def home
     @blogposts = Blogpost.all
+    @employments = Employment.all
   end
 end

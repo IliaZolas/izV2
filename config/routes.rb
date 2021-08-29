@@ -19,7 +19,13 @@ Rails.application.routes.draw do
       resources :blogposts
     end
 
+    resources :users do
+      resources :employments
+    end
+
     resources :blogposts
+
+    resources :employments
 
 
   end

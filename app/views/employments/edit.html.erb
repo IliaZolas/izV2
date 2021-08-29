@@ -1,0 +1,27 @@
+<div class="new-blogpost-page">
+<h1>Edit Project</h1>
+    <h2>Fill in the details below</h2>
+        <%= simple_form_for [@employments] do |f| %>
+            <%= f.input :position_title,
+                        required: true,
+                        autofocus: true,
+                        input_html: { autocomplete: "Position Title" }%>
+            <%= f.input :company_name,
+                        required: true,
+                        autofocus: true,
+                        input_html: { autocomplete: "Company Name" }%>
+            <%= f.input :company_url,
+                        required: true,
+                        autofocus: true,
+                        input_html: { autocomplete: "Company URL" }%>
+            <%= f.input :company_description,
+                        :as => :text,
+                        required: true,
+                        autofocus: true,
+                        input_html: { class: '', autocomplete: "Company Description" }%>
+            <%= f.input :photo,
+                        autofocus: true,
+                        as: :file %>
+            <%= f.submit "UPDATE", class: "btn btn-primary" %>
+        <% end %>
+</div>
