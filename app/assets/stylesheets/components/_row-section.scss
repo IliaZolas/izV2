@@ -1,0 +1,17 @@
+.content-row {
+    width: 100%;
+    padding: 30px;
+}
+
+.row-card {
+    background: #1F1F1F;
+    padding: 25px;
+    border-radius: 10px;
+    width: 507px;
+    height: 250px;
+    &:hover {
+        background: #009c9c;
+        color: white;
+        transition: 0.3s;
+    }
+}
