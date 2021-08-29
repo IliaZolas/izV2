@@ -5,5 +5,6 @@ class PagesController < ApplicationController
     @blogposts = Blogpost.all
     @employments = Employment.all
     @portfolios = Portfolio.all
+    @projects = Project.all
   end
 end
