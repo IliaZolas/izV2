@@ -23,9 +23,17 @@ Rails.application.routes.draw do
       resources :employments
     end
 
+    resources :users do
+      resources :portfolios
+    end
+
+    resources :portfolios
+
     resources :blogposts
 
     resources :employments
+
+
 
 
   end

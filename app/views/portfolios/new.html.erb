@@ -1,0 +1,23 @@
+<div class="new-blogpost-page">
+<h1>Add to client list</h1>
+    <h2>Fill in the details below</h2>
+        <%= simple_form_for [@portfolios] do |f| %>
+            <%= f.input :client_name,
+                        required: true,
+                        autofocus: true,
+                        input_html: { autocomplete: "Client Name" }%>
+            <%= f.input :client_url,
+                        required: true,
+                        autofocus: true,
+                        input_html: { autocomplete: "Client Url" }%>
+            <%= f.input :client_description,
+                        :as => :text,
+                        required: true,
+                        autofocus: true,
+                        input_html: { class: '', autocomplete: "Client Description" }%>
+            <%= f.input :photo,
+                        autofocus: true,
+                        as: :file %>
+            <%= f.submit "CREATE", class: "btn btn-primary" %>
+        <% end %>
+</div>

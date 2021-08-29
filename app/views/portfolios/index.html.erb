@@ -1,0 +1,29 @@
+<div class="all-blogposts-page">
+    <h1>All Portfolio Posts</h1>
+    <p>All clients should appear here</p>
+    <div>
+        <div class="button-container">
+            <%= link_to "Add New", new_user_portfolio_path(current_user), class: "button-main" %>
+        </div>
+        <div class="table-container">
+            <table>
+                <th>Clients</th>
+                <tbody>
+                    <tr>
+                        <% @portfolios.each do |portfolio| %>
+                        <td>
+                            <h3 class="table-h1"><%= portfolio.client_name %></h3>
+                            <p class="table-h2"><%= portfolio.client_url %></p>
+                            <p class="table-p"><%= portfolio.client_description %></p>
+                            <div class="flex table-button-spacing">
+                                <%= link_to "Edit", edit_portfolio_path(portfolio),class: "td-button" %>
+                                <%= link_to "Delete", portfolio_path(portfolio), method: :delete , class: "td-button" %>
+                            </div>
+                        </td>
+                    </tr>
+                    <% end %>
+                </tbody>
+            </table>
+        </div>    
+    </div>
+</div>
