@@ -4,5 +4,6 @@ class PagesController < ApplicationController
   def home
     @blogposts = Blogpost.all
     @employments = Employment.all
+    @portfolios = Portfolio.all
   end
 end

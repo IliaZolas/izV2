@@ -27,14 +27,17 @@ Rails.application.routes.draw do
       resources :portfolios
     end
 
+    resources :users do
+      resources :projects
+    end
+
     resources :portfolios
 
     resources :blogposts
 
     resources :employments
 
-
-
+    resources :projects
 
   end
 end
