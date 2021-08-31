@@ -23,24 +23,26 @@
             <div class="row">
                 <div class="col-4">
                     <div class="heroName">
-                        <img class="izMobile" src="assets/izMobile.png">
+                    <%= image_tag("izMobile.png", class: "izMobile") %>
                         <p class="fName">Ilia</p>
                         <p class="sName">Zolas</p>
                     </div>
                     <div class="socialGroup">
-                        <a href="https://github.com/IliaZolas" class="social" target=_tab><img src="assets/GHicon.png"></a>
-                        <a href="https://www.linkedin.com/in/iliazolas/"class="social" target=_tab><img src="assets/LNicon.png"></a>
-                        <a href="https://www.instagram.com/ilia_thedmc/" class="social" target=_tab><img src="assets/IGicon.png"></a>
+                        <%= link_to image_tag("GHicon.png"), "https://github.com/IliaZolas", class: "social", target:"_tab" %>
+                        <%= link_to image_tag("LNicon.png"), "https://www.linkedin.com/in/iliazolas/", class: "social", target:"_tab" %>
+                        <%= link_to image_tag("IGicon.png"), "https://www.instagram.com/ilia_thedmc/", class: "social", target:"_tab" %>
                     </div>
                 </div>
                 <div class="col-4">
-                    <img class="picIZ" src="assets/iz_3.png" alt="Ilia Zolas">
+                    <%= image_tag("iz_3.png", class: "picIZ") %>
                 </div>
                 <div class="col-4 heroBlurb">
                     <h1 class="headerGreenLine">MARKETER | WEB DEVELOPER</h1>
                     <h2>Based in Lausanne, Fullstack Developer and Digital Marketer.</h2>
                     <p>Fullstack Web Developer and Digital Marketer with over 8 years experience in delivering profitable growth for businesses through quality traffic, sales conversions and web applications.</p>
-                    <button><a href="assets/pdf/IliaZOLAS-CV-2020vis.pdf" class="submitButton" download target=_tab >Download CV</a></button>
+                    <button>
+                        <%= link_to "Download", "assets/pdf/IliaZOLAS-CV-2020vis.pdf", class: "submitButton" , target: "_tab"%>
+                    </button>
                 </div>
             </div>
         </div>
@@ -70,7 +72,7 @@
                     <div class="corePanel">
                         <div class="row">
                             <div class="col-2">
-                                <img class="aboutIcons" src="assets/digitalm-icon.png">
+                                <%= image_tag("digitalm-icon.png", class: "aboutIcons") %>
                             </div>
                             <div class="col-10">
                                 <h3 class="headerHeading">Digital Marketing Expert</h3>
@@ -83,7 +85,7 @@
                     <div class="corePanel">
                         <div class="row">
                             <div class="col-2">
-                                <img class="aboutIcons" src="assets/full-icon.png">
+                                <%= image_tag("full-icon.png", class: "aboutIcons") %>
                             </div>
                         <div class="col-10">
                             <h3 class="headerHeading">Fullstack Web Developer</h3>
@@ -96,7 +98,7 @@
                 <div class="corePanel">
                     <div class="row">
                         <div class="col-2">
-                            <img class="aboutIcons" src="assets/content-icon.png">
+                            <%= image_tag("content-icon.png", class: "aboutIcons") %>
                         </div>
                         <div class="col-10">
                             <h3 class="headerHeading">Content Creator</h3>
@@ -186,7 +188,7 @@
                     <div class="col-6">
                         <div class="row">
                             <div class="col-3">
-                                <img class="largeIcons" src="assets/html.png">
+                                <%= image_tag("html.png", class: "largeIcons") %>
                             </div>
                             <div class="col-9">
                                 <h3>HTML 5</h3>
@@ -197,7 +199,7 @@
                     <div class="col-6">
                         <div class="row">
                             <div class="col-3">
-                                <img class="largeIcons" src="assets/js.png">
+                                <%= image_tag("js.png", class: "largeIcons") %>
                             </div>
                         <div class="col-9">
                             <h3>Javascript</h3>
@@ -212,7 +214,7 @@
                 <div class="col-6">
                     <div class="row">
                         <div class="col-3">
-                        <img class="largeIcons" src="assets/css.png">
+                            <%= image_tag("css.png", class: "largeIcons") %>  
                         </div>
                         <div class="col-9">
                             <h3>SCSS</h3>
@@ -223,7 +225,7 @@
                 <div class="col-6">
                     <div class="row">
                         <div class="col-3">
-                            <img class="largeIcons" src="assets/node.png">
+                            <%= image_tag("node.png", class: "largeIcons") %>
                         </div>
                         <div class="col-9">
                             <h3>Node.js</h3>
@@ -238,7 +240,7 @@
                 <div class="col-6">
                     <div class="row">
                         <div class="col-3">
-                            <img class="largeIcons" src="assets/mysql.png">
+                            <%= image_tag("mysql.png", class: "largeIcons") %>
                         </div>
                         <div class="col-9">
                             <h3>MySQL</h3>
@@ -249,7 +251,7 @@
                 <div class="col-6">
                     <div class="row">
                         <div class="col-3">
-                            <img class="largeIcons" src="assets/react.png">
+                            <%= image_tag("react.png", class: "largeIcons") %>
                         </div>
                         <div class="col-9">
                             <h3>React</h3>
@@ -264,7 +266,7 @@
                 <div class="col-6">
                     <div class="row">
                         <div class="col-3">
-                            <img class="largeIcons" src="assets/ruby.png">
+                            <%= image_tag("ruby.png", class: "largeIcons") %>
                         </div>
                         <div class="col-9">
                             <h3>Ruby</h3>
@@ -275,7 +277,7 @@
                 <div class="col-6">
                     <div class="row">
                         <div class="col-3">
-                            <img class="largeIcons" src="assets/angularjs.png">
+                            <%= image_tag("angularjs.png", class: "largeIcons") %>
                         </div>
                         <div class="col-9">
                             <h3>AngularJS</h3>
@@ -297,7 +299,7 @@
                     <div class="col-6">
                         <div class="row">
                             <div class="col-3">
-                                <img class="largeIcons" src="assets/micro.png">
+                                <%= image_tag("micro.png", class: "largeIcons") %>
                             </div>
                             <div class="col-9">
                                 <h3>Microsoft Office</h3>
@@ -308,7 +310,7 @@
                     <div class="col-6">
                         <div class="row">
                             <div class="col-3">
-                                <img class="largeIcons" src="assets/adobe.png">
+                                <%= image_tag("adobe.png", class: "largeIcons") %>
                             </div>
                             <div class="col-9">
                                 <h3>Adobe Suite</h3>
@@ -323,7 +325,7 @@
                     <div class="col-6">
                         <div class="row">
                             <div class="col-3">
-                                <img class="largeIcons" src="assets/wordpress.png">
+                                <%= image_tag("wordpress.png", class: "largeIcons") %>
                             </div>
                             <div class="col-9">
                                 <h3>Wordpress</h3>
@@ -334,7 +336,7 @@
                     <div class="col-6">
                         <div class="row">
                             <div class="col-3">
-                                <img class="largeIcons" src="assets/hootsuite.png">
+                                <%= image_tag("hootsuite.png", class: "largeIcons") %>
                             </div>
                             <div class="col-9">
                                 <h3>Hootsuite</h3>
@@ -349,7 +351,7 @@
                     <div class="col-6">
                         <div class="row">
                             <div class="col-3">
-                                <img class="largeIcons" src="assets/mailchimp.png">
+                                <%= image_tag("mailchimp.png", class: "largeIcons") %>
                             </div>
                             <div class="col-9">
                                 <h3>Mailchimp</h3>
@@ -360,7 +362,7 @@
                     <div class="col-6">
                         <div class="row">
                             <div class="col-3">
-                                <img class="largeIcons" src="assets/githun.png">
+                                <%= image_tag("githun.png", class: "largeIcons") %>
                             </div>
                             <div class="col-9">
                                 <h3>Github</h3>
@@ -376,7 +378,7 @@
                 <div class="col-6">
                     <div class="row">
                         <div class="col-3">
-                            <img class="largeIcons" src="assets/blender.png">
+                            <%= image_tag("blender.png", class: "largeIcons") %>
                         </div>
                         <div class="col-9">
                             <h3>Blender</h3>
@@ -387,7 +389,7 @@
             <div class="col-6">
                 <div class="row">
                     <div class="col-3">
-                        <img class="largeIcons" src="assets/spss.png">
+                        <%= image_tag("spss.png", class: "largeIcons") %>
                     </div>
                     <div class="col-9">
                         <h3>SPSS</h3>
@@ -402,7 +404,7 @@
                 <div class="col-6">
                     <div class="row">
                         <div class="col-3">
-                            <img class="largeIcons" src="assets/google%20apps.png">
+                            <%= image_tag("googleapps.png", class: "largeIcons") %>
                         </div>
                         <div class="col-9">
                             <h3>Google Apps</h3>
@@ -413,7 +415,7 @@
                 <div class="col-6">
                     <div class="row">
                         <div class="col-3">
-                            <img class="largeIcons" src="assets/dropbox.png">
+                            <%= image_tag("dropbox.png", class: "largeIcons") %>
                         </div>
                         <div class="col-9">
                             <h3>Dropbox</h3>
@@ -428,7 +430,7 @@
                 <div class="col-6">
                     <div class="row">
                         <div class="col-3">
-                            <img class="largeIcons" src="assets/logic.png">
+                            <%= image_tag("logic.png", class: "largeIcons") %>
                         </div>
                         <div class="col-9">
                             <h3>Logic Pro X</h3>
@@ -439,7 +441,7 @@
             <div class="col-6">
                 <div class="row">
                     <div class="col-3">
-                        <img class="largeIcons" src="assets/tableau.png">
+                        <%= image_tag("tableau.png", class: "largeIcons") %>
                     </div>
                     <div class="col-9">
                         <h3>Data and Analytics</h3>
@@ -462,7 +464,7 @@
                 <div class="col-6">
                     <div class="row corePanel">
                         <div class="col-2">
-                            <img class="smallIcons" src="assets/lewagon.png">
+                            <%= image_tag("lewagon.png", class: "smallIcons") %>
                         </div>
                         <div class="col-10">
                             <h1 class="headerHeading">Le Wagon</h1>
@@ -472,7 +474,7 @@
                     </div>
                     <div class="row corePanel">
                         <div class="col-2">
-                            <img class="smallIcons" src="assets/ehl.png">
+                            <%= image_tag("ehl.png", class: "smallIcons") %>
                         </div>
                         <div class="col-10">
                             <h1 class="headerHeading">Ecole Hoteliere de Lausanne</h1>
@@ -482,7 +484,7 @@
                     </div>
                     <div class="row corePanel">
                         <div class="col-2">
-                            <img class="smallIcons" src="assets/unipretoria.png">
+                            <%= image_tag("unipretoria.png", class: "smallIcons") %>
                         </div>
                         <div class="col-10">
                             <h1 class="headerHeading">University of Pretoria</h1>
@@ -492,7 +494,7 @@
                     </div>
                 <div class="row corePanel">
                     <div class="col-2">
-                        <img class="smallIcons" src="assets/crawford.png">
+                        <%= image_tag("crawford.png", class: "smallIcons") %>
                     </div>
                     <div class="col-10">
                         <h1 class="headerHeading">Crawford College</h1>
@@ -502,7 +504,7 @@
                 </div>
                 <div class="row corePanel">
                     <div class="col-2">
-                        <img class="smallIcons" src="assets/trinity.png">
+                        <%= image_tag("trinity.png", class: "smallIcons") %>
                     </div>
                     <div class="col-10">
                         <h1 class="headerHeading">Trinity College London</h1>
@@ -514,7 +516,7 @@
             <div class="col-6">
                 <div class="row corePanel">
                     <div class="col-2">
-                        <img class="smallIcons" src="assets/begfullstack.png">
+                        <%= image_tag("begfullstack.png", class: "smallIcons") %>
                     </div>
                     <div class="col-10">
                         <h1 class="headerHeading">Beginner Full Stack Web Development</h1>
@@ -524,7 +526,7 @@
                 </div>
                 <div class="row corePanel">
                     <div class="col-2">
-                        <img class="smallIcons" src="assets/socialcourse.png">
+                        <%= image_tag("socialcourse.png", class: "smallIcons") %>
                     </div>
                     <div class="col-10">
                         <h1 class="headerHeading">Digital Marketing + Business</h1>
@@ -534,7 +536,7 @@
                 </div>
                 <div class="row corePanel">
                     <div class="col-2">
-                        <img class="smallIcons" src="assets/ui.png">
+                        <%= image_tag("ui.png", class: "smallIcons") %>
                     </div>
                     <div class="col-10">
                         <h1 class="headerHeading">User Experience Design Essentials</h1>
@@ -544,7 +546,7 @@
                 </div>
                 <div class="row corePanel">
                     <div class="col-2">
-                        <img class="smallIcons" src="assets/logicprox.png">
+                        <%= image_tag("digitalm-icon.png", class: "aboutIcons") %>
                     </div>
                     <div class="col-10">
                         <h1 class="headerHeading">Music + Audio Production</h1>
@@ -558,7 +560,7 @@
         <!-- Contact Form -->
         <div class="row spaces" id="Contact">
             <div class="col-6">
-                <img src="assets/iz_3.png" class="lastImage">
+                <%= image_tag("iz_3.png", class: "lastImage") %>
             </div>
             <div class="col-6 formEnd">
                 <h1 class="headerGreenLine"> Get in touch</h1>
@@ -572,19 +574,6 @@
         </div>
         <div class="section-subheader bottom-footer">
             <p class="footer-txt">Made by Ilia Zolas</p>
-        <!--
-        <a href="https://www.facebook.com/theDMCsa"><img src="assets/fbicon.png" class="socialIcon"></a>
-        
-        <a href="https://www.instagram.com/ilia_thedmc/"><img src="assets/IGicon.png" class="socialIcon"></a>
-        
-        <a href="https://www.linkedin.com/in/iliazolas/"><img src="assets/LNicon.png" class="socialIcon"></a>
-        -->
         </div>
-        <!-- Scripts -->
-        <!--
-        <script src="js/mobile-nav.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-        <script src="js/autoscroll.js"></script>
-        -->
     </body>
 </html>

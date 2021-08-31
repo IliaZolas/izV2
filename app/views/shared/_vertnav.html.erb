@@ -1,17 +1,19 @@
+<% if user_signed_in? %>
 <div class="vertnav-bar">
-    <div class="navitem">
-        <a>Dashboard</a>
+    <div class="">
+        <%= link_to "Dashboard", dashboard_index_path(current_user) , class:"navitem"%>
     </div>
     <div class="navitem">
-        <a>Blog Posts</a>
+        <%= link_to "Blogposts", user_blogposts_path(current_user), class:"navitem"%>
     </div>
     <div class="navitem">
-        <a>Employment</a>
+        <%= link_to "Employment", user_employments_path(current_user), class:"navitem"%>
     </div>
     <div class="navitem">
-        <a>Portfolio</a>
+        <%= link_to "Portfolio", user_portfolios_path(current_user), class:"navitem"%>
     </div>
     <div class="navitem">
-        <a>Projects</a>
+        <%= link_to "Projects", user_projects_path(current_user) , class:"navitem"%>
     </div>
+    <% end %>
 </div>
