@@ -114,7 +114,7 @@
         <div class="flex section-heading">
             <h1 class="headerGreenLine headerJustify">Employment</h1>
         </div>
-        <div class="content-row flex">
+        <div class="content-row flex hidescrollbar">
             <% @employments.each do |employment| %>
                 <div class="row-card relative">
                     <h3 class="table-h1"><%= employment.position_title %></h3>
@@ -131,7 +131,7 @@
         <div class="flex section-heading">
             <h1 class="headerGreenLine headerJustify">Portfolio</h1>
         </div>
-        <div class="content-row flex">
+        <div class="content-row flex hidescrollbar">
             <% @portfolios.each do |portfolio| %>
                 <div class="row-card relative">
                     <h3 class="table-h1"><%= portfolio.client_name %></h3>
@@ -144,10 +144,10 @@
             <% end %>
         </div>
         <!-- PROJECTS -->
-        <div class="flex section-heading">
+        <div class="flex section-heading>
             <h1 class="headerGreenLine headerJustify">Projects</h1>
         </div>
-        <div class="content-row flex">
+        <div class="content-row flex hidescrollbar">
             <% @projects.each do |project| %>
                 <div class="row-card relative">
                     <h3 class="table-h1"><%= project.project_name %></h3>
@@ -163,7 +163,7 @@
         <div class="flex section-heading">
             <h1 class="headerGreenLine headerJustify">Blogposts</h1>
         </div>
-        <div class="content-row flex">
+        <div class="content-row flex hidescrollbar">
             <% @blogposts.each do |blogpost| %>
                 <div class="row-card relative">
                     <h3 class="table-h1"><%= blogpost.blog_title %></h3>
