@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'contact/create'
   devise_for :users
 
   unauthenticated :user do
@@ -8,6 +9,8 @@ Rails.application.routes.draw do
       # get "/contact" => "pages#contact"
 
       resources :blogposts, only: [:show]
+      
+      resources :contact, only: [:create]
 
     end
   end
