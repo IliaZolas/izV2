@@ -24,6 +24,20 @@
     }
 }
 
+.contact-submit-button {
+    padding-right: 10px;
+    background: #009c9c;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    margin-right: 10px;
+    border: 0px;
+    border-radius: 5px;
+    &:hover {
+        text-decoration: none !important;
+        color: white;
+    }
+}
+
 .home-content-button {
     color: white;
     text-decoration: none;

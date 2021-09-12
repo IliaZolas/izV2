@@ -565,7 +565,7 @@
             <div class="col-6 formEnd">
                 <h1 class="headerGreenLine"> Get in touch</h1>
                 <%= form_for @contact, url: contact_create_path, remote: true do |f| %>
-                <div class="col-md-6">
+                <div class="">
                     <%= f.label :name %>
                     <%= f.text_field  :name, required: true, class: "contact-form-text-area" %>
                     <%= f.label :email %>
@@ -575,7 +575,7 @@
                     <%= f.label :message %>
                     <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "contact-form-text-area",
                             placeholder: "Send me a message"%>
-                    <%= f.submit 'Send Message', class: 'btn btn-primary' %>
+                    <%= f.submit 'Send Message', class: 'contact-submit-button' %>
                     </div>
                 <% end %>
 
