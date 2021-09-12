@@ -6,5 +6,6 @@ class PagesController < ApplicationController
     @employments = Employment.all
     @portfolios = Portfolio.all
     @projects = Project.all
+    @contact = Contact.new()
   end
 end
