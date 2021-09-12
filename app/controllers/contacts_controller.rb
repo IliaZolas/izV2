@@ -1,8 +1,8 @@
 class ContactsController < ApplicationController
 
   def create
-    raise
     @contact = Contact.new()
+    raise
     @contact.name = params[:name]
     @contact.email = params[:email]
     @contact.subject= params[:subject]

@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
       resources :blogposts, only: [:show]
       
-      resources :contacts, only: [:new, :create]
+      resources :contacts, only: [:create]
 
     end
   end
