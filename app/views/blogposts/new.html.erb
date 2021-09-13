@@ -11,7 +11,7 @@
                         autofocus: true,
                         input_html: { autocomplete: "Blogpost Sub Heading" }%>
             <%= f.input :blog_text,
-                        :as => :text,
+                        as: :rich_text_area,
                         required: true,
                         autofocus: true,
                         input_html: { class: '', autocomplete: "Blog Text" }%>
