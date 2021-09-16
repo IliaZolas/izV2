@@ -13,4 +13,5 @@
 @import "pages/index";
 
 //= require actiontext
-@import "actiontext"
+@import "trix/dist/trix";
+@import "actiontext";
