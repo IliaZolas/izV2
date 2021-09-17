@@ -50,3 +50,9 @@ ul  .nav-item {
 .whole-nav {
   position: fixed;
 }
+
+.nav-scroll {
+  background: #1f1f1f;
+  transition: 0.5s;
+  box-shadow: 0px 14px 20px rgba(0,0,0,0.6);
+}
