@@ -5,7 +5,13 @@
         <p class="table-p"><%= @blogpost.blog_text%></p>
         <div class="flex table-button-spacing">
     </div>
+    <% if user_signed_in? %>
     <div class="flex table-button-spacing">
         <%= link_to "Back to all blogposts", user_blogposts_path(current_user), class: "td-button" %>
     </div>
+    <% else %>
+    <div class="flex table-button-spacing">
+        <%= link_to "Back", root_path, class: "td-button" %>
+    </div>
+    <% end%>
 </div>
