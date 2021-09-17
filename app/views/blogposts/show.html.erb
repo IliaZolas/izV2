@@ -5,4 +5,7 @@
         <p class="table-p"><%= @blogpost.blog_text%></p>
         <div class="flex table-button-spacing">
     </div>
+    <div class="flex table-button-spacing">
+        <%= link_to "Back to all blogposts", user_blogposts_path(current_user), class: "td-button" %>
+    </div>
 </div>
