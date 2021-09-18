@@ -63,3 +63,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Contact Form
 gem 'mail_form'
+
+#Cloudinary
+gem 'cloudinary', '~> 1.16.0'
+
+#Image processing for Trix
+gem 'image_processing', '~> 1.0'
