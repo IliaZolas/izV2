@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
       resources :blogposts, only: [:show]
       
-      resources :contacts, only: [:create]
+      resources :contacts, only: [:new, :create]
 
 
     end
@@ -44,6 +44,7 @@ Rails.application.routes.draw do
     resources :projects
 
     resources :dashboard, only: [:index]
+
 
   end
 end

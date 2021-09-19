@@ -564,7 +564,7 @@
             </div>
             <div class="col-6 formEnd">
                 <h1 class="headerGreenLine"> Get in touch</h1>
-                <%= form_for @contact, url: url_for(controller: 'contacts', action: 'create'), remote: true do |f| %>
+                <%= simple_form_for @contact, url: contacts_path, method: :post do |f| %>
                 <div class="">
                     <%= f.label :name %>
                     <%= f.text_field  :name, required: true, class: "contact-form-text-area" %>

@@ -1,4 +1,6 @@
 class Contact < MailForm::Base
+    include MailForm::Delivery
+
     attribute :name, validate: true
     attribute :subject, validate: true
     attribute :email, validate: true
