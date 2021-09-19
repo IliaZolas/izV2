@@ -11,6 +11,7 @@ class ContactsController < ApplicationController
     @contact.email = params[:email]
     @contact.subject= params[:subject]
     @contact.message = params[:message]
+    @contact.deliver
   end
 
   private
