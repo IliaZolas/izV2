@@ -321,12 +321,13 @@ margin-left: -2%;
 
 .formEnd {
     float: right;
+    padding-bottom:50px;
 }
 
 
 input[type=text] {
     display:block;
-  width: 70%;
+  width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
@@ -337,7 +338,7 @@ input[type=text] {
 
 input[type=textarea] {
     display:block;
-  width: 70%;
+  width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
@@ -362,7 +363,7 @@ label {
 
 textarea {
     display:block;
-    width: 70%;
+    width: 100%;
     opacity: 0.5;
     margin-top: 5px;
      margin-bottom: 25px;
@@ -582,13 +583,15 @@ a.submitButton {
 
 
 .bottom-footer{
-    padding: 1px;
-    padding-left: 48%;
+    padding-top: 8px;
+    padding-bottom: 5px !important;
+    text-align: center;
     color: #009c9c;
 }
 
 .footer-txt {
     color: #009c9c;
+    padding-top: 8px;
 }
 
 

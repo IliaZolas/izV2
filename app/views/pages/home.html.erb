@@ -558,23 +558,26 @@
         </div>
         </div>
         <!-- Contact Form -->
-        <div class="row spaces" id="Contact">
-            <div class="col-6">
+        <div class="flex contact-area-height" id="Contact">
+            <div class="form-image-container">
                 <%= image_tag("iz_3.png", class: "lastImage") %>
             </div>
-            <div class="col-6 formEnd">
+            <div class="formEnd">
                 <h1 class="headerGreenLine"> Get in touch</h1>
                 <%= simple_form_for @contact, url: contacts_path, method: :post do |f| %>
-                <div class="">
+                <div class="mail-form-area">
                     <%= f.label :name %>
-                    <%= f.text_field  :name, required: true, class: "contact-form-text-area" %>
+                    <%= f.text_field  :name, required: true, class: "contact-form-text-area",
+                            placeholder: "Full Name" %>
                     <%= f.label :email %>
-                    <%= f.text_field :email, required: true, class: "contact-form-text-area" %>
+                    <%= f.text_field :email, required: true, class: "contact-form-text-area",
+                            placeholder: "Your Email Address" %>
                     <%= f.label :subject %>
-                    <%= f.text_field :subject, required: true, class: "contact-form-text-area" %>
+                    <%= f.text_field :subject, required: true, class: "contact-form-text-area",
+                            placeholder: "Subject" %>
                     <%= f.label :message %>
                     <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "contact-form-text-area",
-                            placeholder: "Send me a message"%>
+                            placeholder: "Your Message"%>
                     <%= f.submit 'Send Message', class: 'contact-submit-button' %>
                     </div>
                 <% end %>
