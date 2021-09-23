@@ -7,7 +7,6 @@ class ContactsController < ApplicationController
 
   def create
     @contact = Contact.new(contact_params)
-    @contact.deliver
     redirect_to root_path
     if @contact.deliver
       puts "Message sent"
