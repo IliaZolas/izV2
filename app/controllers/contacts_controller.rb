@@ -7,11 +7,13 @@ class ContactsController < ApplicationController
 
   def create
     @contact = Contact.new(contact_params)
-    @contact.name = params[:name]
-    @contact.email = params[:email]
-    @contact.subject= params[:subject]
-    @contact.message = params[:message]
     @contact.deliver
+    redirect_to root_path
+    if @contact.deliver
+      puts "Message sent"
+    else
+      puts "Message did not send"
+    end
   end
 
   private
