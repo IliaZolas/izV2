@@ -17,7 +17,11 @@
                         input_html: { class: "text-area-blog", autocomplete: "Blog Text" }%>
             <%= f.input :photo,
                         autofocus: true,
-                        as: :file %>
+                        as: :file  %>
+            <%= f.input :date, 
+                        required: true,
+                        autofocus: true,
+                        input_html: { class: "text-area-blog", autocomplete: "Date" } %>
             <%= f.submit "CREATE", class: "btn btn-primary" %>
         <% end %>
 </div>
