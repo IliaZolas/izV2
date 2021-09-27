@@ -1,5 +1,5 @@
 <div class="page-content-area-blog">
-    <% content_for :meta_title, "#{@blogpost.blog_title} is on #{DEFAULT_META["meta_product_name"]}" %>
+    <% content_for :meta_title, "#{@blogpost.blog_title} | #{DEFAULT_META["meta_product_name"]}" %>
     <% content_for :meta_description, @blogpost.blog_sub_heading %>
     <% content_for :meta_image, cl_image_path(@blogpost.photo.key) %>
     <div>      
