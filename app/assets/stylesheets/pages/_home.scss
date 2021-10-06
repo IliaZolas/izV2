@@ -177,7 +177,7 @@ p {
 }
 
 
-.izMobile{
+.iz-mobile{
     display: none;
 }
 
@@ -633,13 +633,12 @@ a.submitButton {
 
 @media screen and (max-width: 1280px) {
 
-    .heroName {
-    padding-top: 16%;
-    margin-right: -16%;
+    .hero-name {
+    margin-right: -30%;
 }
     
     .pic-iz{
-        // padding-top:14%;
+        width: 400px;
     }
     
     .aboutIcons {
@@ -658,14 +657,14 @@ a.submitButton {
 
 @media screen and (max-width: 1024px) and (orientation:landscape)  {
 
-    .heroName {
-    padding-top: 45%;
-    margin-right: -16%;
+    .hero-name {
+        padding-top: 45%;
+        margin-right: -16%;
     }
     
-    .heroBlurb {
-    padding-top: 5%;
-    margin-right: -16%;
+    .hero-blurb {
+        padding-top: 5%;
+        margin-right: -16%;
     }
     
     .fName, .sName {
@@ -673,9 +672,12 @@ a.submitButton {
     }
     
     .pic-iz {
-    display:block;
-        padding-top: 40%; 
-       
+
+    }
+
+    .social-group {
+        padding-left: 5%;
+        padding-top: 25%;
     }
     
 }
@@ -786,10 +788,30 @@ a.submitButton {
         padding-left: 2.1%;
     }
     
-    .izMobile{
+    .iz-mobile{
         display: block;
         margin:0 auto;
         width:40%;
+    }
+
+    .flex {
+        display: block;
+    }
+    .hero-name {
+        margin: auto 0;
+        padding-top:100px;
+    }
+
+    .social-group {
+        margin:auto 0%;
+        padding-top: 60px;
+        padding-left: 140px;
+    }
+
+    .header-blurb {
+        padding: 40px;
+        margin: 0px;
+        width: 100%;
     }
     
     h2 {
