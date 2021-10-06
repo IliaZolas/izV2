@@ -263,8 +263,9 @@ button.a {
 
 
 /* FB LN IG buttons on header */
-.socialGroup {
+.social-group {
     padding-left: 35%;
+    padding-top: 25%;
 }
 
 .social {
@@ -642,7 +643,7 @@ a.submitButton {
 }
     
     .picIZ{
-        padding-top:14%;
+        // padding-top:14%;
     }
     
     .aboutIcons {
@@ -733,7 +734,7 @@ a.submitButton {
     
     .picIZ {
         display:none;
-         padding: 0;
+        padding: 0;
         margin: 0;
     }
     
@@ -743,7 +744,7 @@ a.submitButton {
         margin:0;
     }
     
-     .col-6 {
+    .col-6 {
         width:100%;
         margin:0;
     }
@@ -761,12 +762,12 @@ a.submitButton {
         //overflow: 
     }
     .fName, .sName {
-    text-align: center;
+        text-align: center;
 }
     
     .row {
-  display: block;
-  width: 100%;
+        display: block;
+        width: 100%;
 }
     
     .lastImage {
