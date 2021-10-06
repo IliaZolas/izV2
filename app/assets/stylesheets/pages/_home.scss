@@ -156,7 +156,7 @@ p {
 }
 
 
-.picIZ {
+.pic-iz {
     max-width: 500px;
     max-height: 100%;
     margin: auto;
@@ -262,7 +262,7 @@ button.a {
 }
 
 
-/* FB LN IG buttons on header */
+/* GH LN IG buttons on header */
 .social-group {
     padding-left: 35%;
     padding-top: 25%;
@@ -312,7 +312,7 @@ margin-left: -2%;
 
 
 .container {
-   background-image: url(assets/iz_2.png);
+    background-image: url(assets/iz_2.png);
     float: left;
 }
 
@@ -328,21 +328,21 @@ margin-left: -2%;
 
 input[type=text] {
     display:block;
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  opacity: 0.5;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    opacity: 0.5;
     border-width: 0;
     border-radius: 5px;
 }
 
 input[type=textarea] {
     display:block;
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
     opacity: 0.5;
     border-width: 0;
     border-radius: 5px;
@@ -367,7 +367,7 @@ textarea {
     width: 100%;
     opacity: 0.5;
     margin-top: 5px;
-     margin-bottom: 25px;
+    margin-bottom: 25px;
     padding: 15px;
     border-width: 0;
     border-radius: 5px;
@@ -504,7 +504,6 @@ textarea {
 img.largeIcons {
     float: right;
     max-width: 50%;
-   
 }
 
 
@@ -518,7 +517,6 @@ img.largeIcons {
 img.smallIcons {
     float: right;
     max-width: 100%;
-   
 }
 
 
@@ -572,12 +570,12 @@ a.submitButton {
 
 
 .headerGreenLine:after {
-  content: "";
-  position: absolute;
-  border: 1px solid #009c9c;
-  width: 100px;
-  margin-left: 15px;
-  margin-top: 3px;  
+    content: "";
+    position: absolute;
+    border: 1px solid #009c9c;
+    width: 100px;
+    margin-left: 15px;
+    margin-top: 3px;  
 }
 
 
@@ -606,18 +604,16 @@ a.submitButton {
 /* Paddles */
 
 .rowpaddle {
-   	position: relative;
-	
-    
+    position: relative;
 }
 
 .paddle {
     position:absolute;
-     top:45%;
+    top:45%;
 }
 
 .paddles { 
-     
+
 }
 
 .left-paddle { 
@@ -626,7 +622,6 @@ a.submitButton {
 
 .right-paddle, .right-paddley, .right-paddler { 
     right: 0;
-   
 }
 
 .hidden {
@@ -643,7 +638,7 @@ a.submitButton {
     margin-right: -16%;
 }
     
-    .picIZ{
+    .pic-iz{
         // padding-top:14%;
     }
     
@@ -677,7 +672,7 @@ a.submitButton {
         font-size: 80px;
     }
     
-    .picIZ {
+    .pic-iz {
     display:block;
         padding-top: 40%; 
        
@@ -733,7 +728,7 @@ a.submitButton {
         width: 100%;
 }
     
-    .picIZ {
+    .pic-iz {
         display:none;
         padding: 0;
         margin: 0;
