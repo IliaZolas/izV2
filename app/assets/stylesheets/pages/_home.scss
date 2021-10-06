@@ -150,14 +150,14 @@ p {
     line-height: 0;
 }
 
-.heroName {
+.hero-name {
     padding-top: 13%;
     margin-right: -30%;
 }
 
 
 .picIZ {
-    max-width: 100%;
+    max-width: 400px;
     max-height: 100%;
     margin: auto;
     display: block;
@@ -539,9 +539,10 @@ img.smallIcons {
 
 /* Hero sections */
 
-.heroBlurb {
-padding-top: 13%;
+.header-blurb {
+    padding-top: 13%;
     margin-left: -9%;
+    width:33%;
 }
 
 

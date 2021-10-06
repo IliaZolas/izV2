@@ -20,9 +20,9 @@
     <body>
         <!-- 3 columns for header -->
         <div class= "section-header" id="home">
-            <div class="row">
-                <div class="col-4">
-                    <div class="heroName">
+            <div class="flex space-around">
+                <div class="">
+                    <div class="hero-name">
                     <%= image_tag("izMobile.png", class: "izMobile") %>
                         <p class="fName">Ilia</p>
                         <p class="sName">Zolas</p>
@@ -33,10 +33,10 @@
                         <%= link_to image_tag("IGicon.png"), "https://www.instagram.com/ilia_thedmc/", class: "social", target:"_tab" %>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="">
                     <%= image_tag("iz_3.png", class: "picIZ") %>
                 </div>
-                <div class="col-4 heroBlurb">
+                <div class=" header-blurb">
                     <h1 class="headerGreenLine">MARKETER | WEB DEVELOPER</h1>
                     <h2>Based in Lausanne, Fullstack Developer and Digital Marketer.</h2>
                     <p>Fullstack Web Developer and Digital Marketer with over 8 years experience in delivering profitable growth for businesses through quality traffic, sales conversions and web applications.</p>
