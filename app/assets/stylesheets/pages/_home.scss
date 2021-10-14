@@ -761,12 +761,12 @@ a.submitButton {
     }
     .fName, .sName {
         text-align: center;
-}
+    }
     
     .row {
         display: block;
         width: 100%;
-}
+    }
     
     .lastImage {
         display: none;
@@ -845,54 +845,48 @@ a.submitButton {
     display:none;
     }
     
-    
+    .cardEmployment,.cardExperience,
+    .cardProjects   {
+        height: 100%;
+        width: 345px;
+    }
 
-    
+    .cardEmployment:hover,.cardExperience:hover,
+    .cardProjects:hover {
+        height: 100%;
+        width: 345px;
+    }
+        
 
-.cardEmployment,.cardExperience,
-.cardProjects   {
-    height: 100%;
-    width: 345px;
-}
+    .cardText {
+        word-wrap: break-word;
+        white-space: normal;
+        line-height: 1.2;
+    }
 
-.cardEmployment:hover,.cardExperience:hover,
-.cardProjects:hover {
-    height: 100%;
-    width: 345px;
-}
-    
-
-.cardText {
-    word-wrap: break-word;
-    white-space: normal;
-    line-height: 1.2;
-}
-
-
-
-.readMore {
-    display: inline-block;
-    text-transform: uppercase;
-    margin-top: 50px;
-    float:right;
-    color: #FEFEFE;
-    padding: 2px 16px;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
-    
-.readMore-employ{
-    display: inline-block;
-    text-transform: uppercase;
-    margin-top: 5px;
-    float:right;
-    color: #FEFEFE;
-    padding: 2px 16px;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
+    .readMore {
+        display: inline-block;
+        text-transform: uppercase;
+        margin-top: 50px;
+        float:right;
+        color: #FEFEFE;
+        padding: 2px 16px;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+        
+    .readMore-employ{
+        display: inline-block;
+        text-transform: uppercase;
+        margin-top: 5px;
+        float:right;
+        color: #FEFEFE;
+        padding: 2px 16px;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
     
     .formSubmitButton {
     color: #FEFEFE;
@@ -903,20 +897,20 @@ a.submitButton {
     padding: 10px 10px 10px 10px;
     margin-bottom: 50px;
         -webkit-appearance: none;
-}
+    }
     
     .socialIcon {
     padding-left: 2%;
     padding-bottom: 1%;
     height: 25px;
-}
+    }
     
     .buttonContainer{
         float: right;
         padding-left: 50px;
         margin-top: -25px;
     
-}
+    }
 
     .butthank {
     
@@ -931,7 +925,11 @@ a.submitButton {
     }
     
     .paddle {
-     top:210px;
+        top:210px;
+    }
+    .mobile-column {
+        display: none;
+
     }
     
 }
