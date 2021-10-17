@@ -13,3 +13,11 @@
     width: 1000px;
     margin: auto;
 }
+
+@media screen and (max-width: 768px) {
+
+    .section-width {
+        width: 100%;
+    }
+
+}

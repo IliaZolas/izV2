@@ -301,9 +301,11 @@ margin-left: -2%;
 /* corePanels */
 
 .corePanel {
+    display: flex;
     background-color: #222222;
-    padding: 5px;
+    padding: 15px 10px 0px;
     margin: 10px;
+    width: 100%;
 }
 
 .lightGrey {
