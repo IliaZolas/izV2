@@ -780,11 +780,13 @@ a.submitButton {
     }
     
     .formEnd {
-        padding-left:25%;
+        width: 100%;
+        padding:50px;
+        background:#222222;
     }
     
     .bottom-footer {
-        padding-left: 39.5%;
+        // padding-left: 39.5%;
     }
     
     div.bottom-footer a{
