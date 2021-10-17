@@ -30,3 +30,14 @@
 .about-me-left-more-top-padding {
     padding-top:25px;
 }
+
+@media screen and (max-width: 768px) {
+    
+    .about-me-left-more-margin {
+        margin-left: 0px;
+    }
+    .about-me-left {
+        width: 100%;
+    }
+
+}

@@ -6,3 +6,16 @@
     display: flex;
     justify-content: space-around;
 }
+
+.flex-about-me {
+    display: flex;
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    .flex-about-me {
+        display: block;
+    }
+
+}
