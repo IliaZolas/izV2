@@ -11,10 +11,23 @@
     display: flex;
 }
 
+.flex-cards {
+    display: flex;
+}
+
+.flex-cards-lang {
+    display: flex;
+    justify-content: space-around;
+}
+
 
 @media screen and (max-width: 768px) {
     
     .flex-about-me {
+        display: block;
+    }
+
+    .flex-cards-lang {
         display: block;
     }
 
