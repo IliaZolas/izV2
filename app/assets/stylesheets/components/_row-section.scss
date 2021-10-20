@@ -25,3 +25,16 @@
     background: #1F1F1F;
     margin: auto 0;
 }
+
+@media screen and (max-width: 768px) {
+        
+    .row-card {
+        background: #1F1F1F;
+        padding: 25px;
+        border-radius: 5px;
+        min-width: 350px;
+        max-width: 350px;
+        height: 320px;
+        margin-right: 20px;
+    }
+}

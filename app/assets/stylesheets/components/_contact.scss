@@ -21,3 +21,14 @@ padding-right: 50px;
 
 
 }
+
+
+@media screen and (min-width: 1024px) {
+
+    .contact-area-height {
+        padding-top: 50px;
+        padding-bottom: 0px;
+        padding-right: 100px;
+    }
+
+}

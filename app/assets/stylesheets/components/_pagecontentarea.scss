@@ -20,6 +20,18 @@
     padding-bottom: 50px;
 }
 
+@media screen and (max-width: 768px) {
+
+    .page-content-area-blog {
+        padding-left: 50px;
+        padding-top: 150px;
+        padding-right: 40px;
+        width: 100%;
+        padding-bottom: 50px;
+    }
+}
+
+
 
 // .log-in-form {
 //     margin: 0 auto;
