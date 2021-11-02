@@ -4,7 +4,7 @@ class PagesController < ApplicationController
   def home
     @blogposts = Blogpost.all.order("date DESC")
     @employments = Employment.all.order("date DESC")
-    @portfolios = Portfolio.all
+    @portfolios = Portfolio.all.order("date DESC")
     @projects = Project.all
     @contact = Contact.new
 
