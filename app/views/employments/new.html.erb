@@ -19,6 +19,10 @@
                         required: true,
                         autofocus: true,
                         input_html: { class: '', autocomplete: "Company Description" }%>
+            <%= f.input :date, 
+                        required: true,
+                        autofocus: true,
+                        input_html: { class: "text-area-blog", autocomplete: "Date" } %>
             <%= f.input :photo,
                         autofocus: true,
                         as: :file %>

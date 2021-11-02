@@ -40,6 +40,6 @@ class EmploymentsController < ApplicationController
     private
 
     def employment_params
-    params.require(:employment).permit(:user_id, :position_title, :company_name, :company_url, :company_description)
+    params.require(:employment).permit(:user_id, :position_title, :company_name, :company_url, :date, :company_description)
     end
 end
