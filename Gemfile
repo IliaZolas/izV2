@@ -69,3 +69,6 @@ gem 'cloudinary', '~> 1.16.0'
 
 #Image processing for Trix
 gem 'image_processing', '~> 1.0'
+
+# Friendly urls, permalinks, slugs etc.
+gem 'friendly_id', '~> 5.4.0'
