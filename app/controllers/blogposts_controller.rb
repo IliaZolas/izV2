@@ -28,13 +28,13 @@ class BlogpostsController < ApplicationController
     end
 
     def update
-        @blogposts = Blogpost.find(params[:id])
+        @blogposts = Blogpost.friendly.find(params[:id])
         @blogposts.update(blogpost_params)
         redirect_to blogposts_path(@blogposts)
     end
 
     def destroy
-        @blogposts = Blogpost.find(params[:id])
+        @blogposts = Blogpost.friendly.find(params[:id])
         @blogposts.destroy
         redirect_to blogposts_path(@blogposts)
     end
