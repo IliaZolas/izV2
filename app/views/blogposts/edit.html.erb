@@ -10,6 +10,10 @@
                         required: true,
                         autofocus: true,
                         input_html: { autocomplete: "Blogpost Sub Heading" }%>
+            <%= f.input :slug,
+                        required: true,
+                        autofocus: true,
+                        input_html: { autocomplete: "Slug" }%>
             <%= f.input :blog_text,
                         as: :rich_text_area,
                         required: true,
